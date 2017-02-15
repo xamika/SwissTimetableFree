@@ -1,0 +1,235 @@
+* {
+	font-family: Verdana, Lucida Sans, Arial, Helvetica, sans-serif;
+}
+
+body {
+	margin: 0px auto;
+	background-color: #222;
+}
+
+.contents {
+	display: flex;
+	display: -webkit-flex;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	height: 320px;
+}
+
+.content-padding {
+	margin-top: 16px;
+	margin-bottom: 16px;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+.content_text {
+	font-weight: bold;
+	font-size: 5em;
+	color: #fff;
+}
+
+.container {
+	margin-top: 90px;
+	margin-bottom: 16px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+
+.button-selected {
+	transition: all 500ms linear;
+	background-color: rgba(77, 207, 255, 1);
+	color: black;
+}
+
+input[type=text], select {
+	width: 280px;
+	padding: 12px 20px;
+	margin: 8px auto;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+button {
+	width: 360px;
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px 10px 60px 20px;
+	margin-left: -30px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.circle-container {
+	position: relative;
+	display: block;
+	width: 350px;
+	height: 350px;
+	margin: auto;
+}
+
+.circle-crop-top {
+	width: 100%;
+	height: 25%;
+	display: block;
+	overflow: hidden;
+}
+
+.circle-first-left, .circle-first-right, .circle-second-left,
+	.circle-second-right {
+	float: left;
+	width: 50%;
+	height: 25%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.circle-bottom {
+	width: 100%;
+	height: 25%;
+	display: block;
+	overflow: hidden;
+}
+
+.circle-parent {
+	position: relative;
+}
+
+.circle-parent p {
+	position: absolute;
+	text-align: center;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	margin: 0;
+}
+
+.circle {
+	width: 350px;
+	height: 342px;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	border: 2px solid;
+	color: rgba(77, 207, 255, 1);
+	text-align: center;
+	overflow: hidden;
+	font-size: 25px;
+}
+
+.circle-first-left .circle {
+	top: -86px;
+}
+
+.circle-first-right .circle {
+	top: -86px;
+	right: 0;
+}
+
+.circle-second-left .circle {
+	top: -175px;
+}
+
+.circle-second-right .circle {
+	top: -175px;
+	right: 0;
+}
+
+.circle-bottom .circle {
+	top: -262px;
+	right: 0;
+}
+
+.circle-crop-top p {
+	margin: 0px -20px 0px 26px;
+	border: 2px solid;
+	width: 100%;
+	height: 80px;
+	padding: 30px 80px 0 30px;
+	text-align: center;
+	top: -2px;
+}
+
+.circle-first-left p {
+	border: 2px solid;
+	border-left: none;	
+	width: 172px;
+	height: 75px;
+	margin: 10px 0 10px 0;
+	padding: 25px 3px 0px 8px;
+	text-align: center;
+	top: 23%;
+	left: -2px;
+}
+
+.circle-first-right p {
+	border: 2px solid;
+	border-right: none;
+	width: 172px;
+	margin: 10px 0 10px 0;
+	height: 75px;
+	padding: 25px 10px 0px 0px;
+	text-align: center;
+	top: 23%;
+	right: -2px;
+}
+
+.circle-second-left p {
+	border: 2px solid;
+	border-left: none;
+	width: 172px;
+	height: 75px;
+	margin: 10px 0 10px 0;
+	padding: 25px 3px 0px 8px;
+	text-align: center;
+	top: 163px;
+	left: -2px;
+}
+
+.circle-second-right p {
+	border: 2px solid;
+	border-right: none;
+	width: 172px;
+	margin: 10px 0 10px 0;
+	height: 75px;
+	padding: 25px 10px 0px 0px;
+	text-align: center;
+	top: 163px;
+	right: -2px;
+}
+
+.circle-bottom p {
+	margin: 3px;
+	border-top: 2px solid;
+	width: 100%;
+	height: 79px;
+	padding-top: 20px;
+	text-align: center;
+	top: 76%;
+}
+
+.blank {
+	background-color: black;
+	width: 360px;
+	position: absolute;
+}
+
+.blank-top {
+	height: 11px;
+	margin-top: -8px; 
+}
+
+.blank-center {
+	height: 9px;
+	margin-top: 78px; 
+}
+
+
+.blank-bottom {
+	height: 13px;
+	margin-top: -101px; 
+}
+
